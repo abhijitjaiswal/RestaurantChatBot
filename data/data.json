@@ -1,0 +1,210 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "Hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hola",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "I’m hungry. Looking out for some good restaurants",
+        "intent": "information",
+        "entities": [
+          {
+            "start": 38,
+            "end": 49,
+            "value": "restaurants",
+            "entity": "restaurant"
+          }
+        ]
+      },
+      {
+        "text": "Can you suggest some good restaurants in Rishikesh",
+        "intent": "information",
+        "entities": [
+          {
+            "start": 26,
+            "end": 37,
+            "value": "restaurants",
+            "entity": "restaurant"
+          },
+          {
+            "start": 41,
+            "end": 50,
+            "value": "Rishikesh",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "bengaluru",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "bengaluru",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "Okay. Show me some in Allahabad",
+        "intent": "information",
+        "entities": [
+          {
+            "start": 22,
+            "end": 31,
+            "value": "Allahabad",
+            "entity": "place"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "value": "some",
+            "entity": "restaurant"
+          }
+        ]
+      },
+      {
+        "text": "Can you suggest some good restaurants in kolkata",
+        "intent": "information",
+        "entities": [
+          {
+            "start": 26,
+            "end": 37,
+            "value": "restaurants",
+            "entity": "restaurant"
+          },
+          {
+            "start": 41,
+            "end": 48,
+            "value": "kolkata",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "I’m hungry. Looking out for some good restaurants",
+        "intent": "information",
+        "entities": [
+          {
+            "start": 38,
+            "end": 49,
+            "value": "restaurants",
+            "entity": "restaurant"
+          }
+        ]
+      },
+      {
+        "text": "I’m hungry. Looking out for some good chinese restaurants in chandigarh",
+        "intent": "information",
+        "entities": [
+          {
+            "start": 46,
+            "end": 57,
+            "value": "restaurants",
+            "entity": "restaurant"
+          },
+          {
+            "start": 61,
+            "end": 71,
+            "value": "chandigarh",
+            "entity": "place"
+          },
+          {
+            "start": 38,
+            "end": 45,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Show me South Indian restaurants in mumbai",
+        "intent": "information",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "South Indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 36,
+            "end": 42,
+            "value": "mumbai",
+            "entity": "place"
+          },
+          {
+            "start": 21,
+            "end": 32,
+            "value": "restaurants",
+            "entity": "restaurant"
+          }
+        ]
+      },
+      {
+        "text": "show me North Indian dhaba's on pune-mumbai highway",
+        "intent": "information",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "North Indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "dhaba",
+            "entity": "restaurant"
+          },
+          {
+            "start": 32,
+            "end": 51,
+            "value": "pune-mumbai highway",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "My budget is between 300 to 700",
+        "intent": "",
+        "entities": [
+          {
+            "start": 21,
+            "end": 31,
+            "value": "300 to 700",
+            "entity": "budget"
+          }
+        ]
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      }
+    ]
+  }
+}
