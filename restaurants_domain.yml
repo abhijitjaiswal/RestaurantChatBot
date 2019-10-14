@@ -1,0 +1,74 @@
+slots:
+  restaurant:
+    type: text
+  place:
+    type: text
+  cuisine:
+    type: categorical values
+      - chinese
+      ....
+  budget:
+    type: categorical values
+  email:
+    type: text
+
+intents:
+  - greet
+  - information
+  - goodbye
+  - yes
+  - no
+  - thank_you
+
+entities:
+  - restaurant    //Not required
+  - place
+  - cuisine
+  - budget
+  - email
+
+templates:
+  utter_greet:
+    - "Hey! how may I help you"
+    - "Hello! how can I help"
+    - "Hi! how can I help you"
+  utter_location:
+    - "In what location?"
+    - "Which city should I find the restuarants in?"
+  utter_cuisine:
+    - text: "what kind of cuisine would you prefer?"
+      buttons:
+        - title: "Chinese"
+          payload: "Chinese"
+        - title: "Mexican"
+          payload: "Mexican"
+        - title: "Italian"
+          payload: "Italian"
+        - title: "American"
+          payload: "American"
+        - title: "South Indian"
+          payload: "South Indian"
+        - title: "North Indian"
+          payload: "North Indian"
+  utter_budget:
+    - text: "What price range are you looking at?"
+      buttons:
+        - title: "Lesser than Rs. 300"
+          payload: "> 300"
+        - title: "Rs. 300 to 700"
+          payload: ">300 <700"
+        - title: "More than 700"
+          payload: ">700"
+  utter_goodbye:
+    - "Bye :("
+    - "GoodBye, see you soon"
+    - "Ciao, have a good day"
+
+actions:
+  - utter_greet
+  - utter_location
+  - utter_cuisine
+  - utter_budget
+  - utter_goodbye
+  - actions.ActionSearchRestaurants
+  - actions.SendEmail
