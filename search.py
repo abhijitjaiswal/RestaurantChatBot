@@ -13,7 +13,7 @@ class ActionSearchRestaurants(Action):
         return 'action_restaurant'
 
     def run(self, dispatcher, tracker, domain):
-        config = {"user_key": "652380b363a0a211c839e239d04a356a"}
+        config = {"user_key": "79c5be536f8d6dd2f52a37c4345a5206"}
         zomato = zomatopy.initialize_app(config)
         loc = tracker.get_slot('place')
         cuisine = tracker.get_slot('cuisine')
