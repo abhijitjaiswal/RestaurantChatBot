@@ -17,6 +17,9 @@ class ActionSearchRestaurants(Action):
         zomato = zomatopy.initialize_app(config)
         loc = tracker.get_slot('place')
         cuisine = tracker.get_slot('cuisine')
+        budget = tracker.get_slot('budget')
+        if budget == "300":
+            pass
         location_detail = zomato.get_location(loc, 1)
         d1 = json.loads(location_detail)
         lat = d1["location_suggestions"][0]["latitude"]
@@ -36,3 +39,9 @@ class ActionSearchRestaurants(Action):
         dispatcher.utter_message("-----" + response)
         return [SlotSet('place', loc)]
 
+class SendEmail(Action):
+    def name(self):
+        return 'action_send_email'
+
+    def run(self, dispatcher, tracker, domain):
+        pass

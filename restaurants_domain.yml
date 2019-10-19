@@ -1,14 +1,21 @@
 slots:
-  restaurant:
-    type: text
   place:
     type: text
   cuisine:
-    type: categorical values
-      - chinese
-      ....
+    type: categorical
+    values:
+      - Chinese
+      - Mexican
+      - Italian
+      - American
+      - South Indian
+      - North Indian
   budget:
-    type: categorical values
+    type: categorical
+    values:
+      - Less than 300
+      - 300 to 700
+      - More than 700
   email:
     type: text
 
@@ -21,7 +28,6 @@ intents:
   - thank_you
 
 entities:
-  - restaurant    //Not required
   - place
   - cuisine
   - budget
@@ -53,22 +59,36 @@ templates:
   utter_budget:
     - text: "What price range are you looking at?"
       buttons:
-        - title: "Lesser than Rs. 300"
-          payload: "> 300"
-        - title: "Rs. 300 to 700"
-          payload: ">300 <700"
+        - title: "Less than 300"
+          payload: "Less than 300"
+        - title: "300 to 700"
+          payload: "300 to 700"
         - title: "More than 700"
-          payload: ">700"
+          payload: "More than 700"
+  utter_email:
+    - text: "Do you want us to send an email?"
+      buttons:
+        - title: "Yes"
+          payload: "Yes"
+        - title: "No"
+          payload: "No"
+  utter_type_email:
+    - text: "Please type your email:?"
   utter_goodbye:
     - "Bye :("
     - "GoodBye, see you soon"
     - "Ciao, have a good day"
+  utter_unsupported_city:
+    - text: "We donot support {place}"
 
 actions:
   - utter_greet
   - utter_location
   - utter_cuisine
   - utter_budget
+  - utter_email
+  - utter_type_email
   - utter_goodbye
-  - actions.ActionSearchRestaurants
-  - actions.SendEmail
+  - search.ActionSearchRestaurants
+  - search.SendEmail
+  - utter_unsupported_city
