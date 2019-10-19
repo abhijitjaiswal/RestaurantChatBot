@@ -29,25 +29,12 @@
       {
         "text": "I’m hungry. Looking out for some good restaurants",
         "intent": "information",
-        "entities": [
-          {
-            "start": 38,
-            "end": 49,
-            "value": "restaurants",
-            "entity": "restaurant"
-          }
-        ]
+        "entities": []
       },
       {
         "text": "Can you suggest some good restaurants in Rishikesh",
         "intent": "information",
         "entities": [
-          {
-            "start": 26,
-            "end": 37,
-            "value": "restaurants",
-            "entity": "restaurant"
-          },
           {
             "start": 41,
             "end": 50,
@@ -77,12 +64,6 @@
             "end": 31,
             "value": "Allahabad",
             "entity": "place"
-          },
-          {
-            "start": 14,
-            "end": 18,
-            "value": "some",
-            "entity": "restaurant"
           }
         ]
       },
@@ -90,12 +71,6 @@
         "text": "Can you suggest some good restaurants in kolkata",
         "intent": "information",
         "entities": [
-          {
-            "start": 26,
-            "end": 37,
-            "value": "restaurants",
-            "entity": "restaurant"
-          },
           {
             "start": 41,
             "end": 48,
@@ -107,25 +82,12 @@
       {
         "text": "I’m hungry. Looking out for some good restaurants",
         "intent": "information",
-        "entities": [
-          {
-            "start": 38,
-            "end": 49,
-            "value": "restaurants",
-            "entity": "restaurant"
-          }
-        ]
+        "entities": []
       },
       {
         "text": "I’m hungry. Looking out for some good chinese restaurants in chandigarh",
         "intent": "information",
         "entities": [
-          {
-            "start": 46,
-            "end": 57,
-            "value": "restaurants",
-            "entity": "restaurant"
-          },
           {
             "start": 61,
             "end": 71,
@@ -155,12 +117,6 @@
             "end": 42,
             "value": "mumbai",
             "entity": "place"
-          },
-          {
-            "start": 21,
-            "end": 32,
-            "value": "restaurants",
-            "entity": "restaurant"
           }
         ]
       },
@@ -173,12 +129,6 @@
             "end": 20,
             "value": "North Indian",
             "entity": "cuisine"
-          },
-          {
-            "start": 21,
-            "end": 26,
-            "value": "dhaba",
-            "entity": "restaurant"
           },
           {
             "start": 32,
@@ -204,6 +154,217 @@
         "text": "bye",
         "intent": "goodbye",
         "entities": []
+      },
+      {
+        "text": "Chinese",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Chinese",
+            "entity": "cuisine",
+            "synonyms": [
+              "Chinese",
+              "Chines",
+              "chines"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Mexican",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Mexican",
+            "entity": "cuisine",
+            "synonyms": [
+              "mexican",
+              "MEXICAN",
+              "mexico",
+              "mexica"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Mexican",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Mexican",
+            "entity": "cuisine",
+            "synonyms": [
+              "mexican",
+              "MEXICAN",
+              "mexico",
+              "mexica"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "bangalore",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "bangalore",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "Less than 300",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "Less than 300",
+            "entity": "budget",
+            "synonyms": [
+              "<300",
+              "less than 300",
+              "around 300",
+              "< 300"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "300 to 700",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "300 to 700",
+            "entity": "budget",
+            "synonyms": [
+              "between 300 and 700",
+              "300-700",
+              "greater than 300",
+              "> 300",
+              ">300"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "More than 700",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "More than 700",
+            "entity": "budget",
+            "synonyms": [
+              "> 700",
+              "above 700"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "abc@gmail.com",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "abc@gmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "abhijit.jaiswal@xyz.com",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 23,
+            "value": "abhijit.jaiswal@xyz.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "Italian",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Italian",
+            "entity": "cuisine",
+            "synonyms": [
+              "italian",
+              "italia",
+              "italy",
+              "ITALY"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "American",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "American",
+            "entity": "cuisine",
+            "synonyms": [
+              "american",
+              "america",
+              "AMERICA"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "South Indian",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "South Indian",
+            "entity": "cuisine",
+            "synonyms": [
+              "southindian",
+              "SouthIndian",
+              "South"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "North Indian",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "North Indian",
+            "entity": "cuisine",
+            "synonyms": [
+              "northindian",
+              "NorthIndian",
+              "North"
+            ]
+          }
+        ]
       }
     ]
   }
